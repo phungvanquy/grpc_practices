@@ -1,0 +1,46 @@
+syntax = "proto3";
+
+
+message SumRequest {
+    int32 arg1 = 1;
+    int32 arg2 = 2;
+}
+message SumResponse {
+    int32 result = 1;
+}
+
+message SubRequest {
+    int32 arg1 = 1;
+    int32 arg2 = 2;
+}
+
+message SubResponse {
+    int32 result = 1;
+}
+
+message MulRequest {
+    int32 arg1 = 1;
+    int32 arg2 = 2;
+}
+
+message MulResponse {
+    int32 result = 1;
+}
+
+message DivRequest {
+    int32 arg1 = 1;
+    int32 arg2 = 2;
+}
+
+message DivResponse {
+    float result = 1;
+}
+
+
+service Services1 {
+    rpc Sum (SumRequest) returns (SumResponse);
+    rpc Sub (SubRequest) returns (SubResponse);
+    rpc Div (DivRequest) returns (DivResponse);
+    rpc Mul (MulRequest) returns (MulResponse);
+}
+

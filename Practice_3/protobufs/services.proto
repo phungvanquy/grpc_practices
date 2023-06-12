@@ -1,0 +1,5 @@
+syntax = "proto3";
+
+import public "service1.proto";
+
+import public "service2.proto";
