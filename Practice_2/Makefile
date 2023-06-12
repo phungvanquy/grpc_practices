@@ -39,3 +39,6 @@ run_service_2:
 
 run_client:
 	python client/main.py
+
+run_test:
+	python services/service1/test.py

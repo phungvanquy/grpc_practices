@@ -1,0 +1,14 @@
+syntax = "proto3";
+
+message ReadFileRequest {
+  string filename = 1;
+}
+
+message ReadFileResponse {
+  int32 x = 1;
+  int32 y = 2;
+}
+
+service Services2 {
+  rpc ReadFile (ReadFileRequest) returns (ReadFileResponse);
+}
