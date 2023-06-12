@@ -1,8 +1,3 @@
-from concurrent import futures
-import grpc
-import os
-import sys
-
 
 """ Method 1 """
 import services_pb2
@@ -31,3 +26,4 @@ print(services_pb2.ReadFileRequest)
 
 # # # type from service 2
 # print(services_pb2.ReadFileRequest)
+

@@ -1,5 +1,8 @@
 syntax = "proto3";
 
+package my_package;
+
+
 import public "service1.proto";
 
 import public "service2.proto";
